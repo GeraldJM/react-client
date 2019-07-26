@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import Content from './components/Content';
+import Footer from './components/Footer';
+
+
 class App extends Component {
   state = {
     name: 'React'
@@ -7,8 +14,12 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Hello {this.state.name}</h1>
+      <div className="Container">
+        <Navbar />
+        <Header />
+        <Sidebar />
+        <Content />
+        <Footer />
       </div>
     )
   }
